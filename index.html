@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SẮC Studio — Thời trang Retro Hiện đại</title>
+  <meta name="description" content="SẮC Studio — thời trang mang tinh thần retro hiện đại. Bộ sưu tập Thu — Đông 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Thanh thông báo -->
+  <div class="announce" aria-label="Thông báo">
+    <div class="announce__track">
+      <span>Miễn phí giao hàng cho đơn từ 999K</span><span>★</span>
+      <span>Đổi trả trong 30 ngày</span><span>★</span>
+      <span>Thanh toán khi nhận hàng (COD)</span><span>★</span>
+      <span>Giảm 10% cho đơn đầu tiên — mã SAC10</span><span>★</span>
+      <span>Miễn phí giao hàng cho đơn từ 999K</span><span>★</span>
+      <span>Đổi trả trong 30 ngày</span><span>★</span>
+      <span>Thanh toán khi nhận hàng (COD)</span><span>★</span>
+      <span>Giảm 10% cho đơn đầu tiên — mã SAC10</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <button class="icon-btn menu-toggle" aria-label="Mở menu" data-open-menu>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <a href="#top" class="logo" aria-label="SẮC Studio — trang chủ">SẮC<span>.</span><small>Studio</small></a>
+      <nav class="nav" aria-label="Danh mục">
+        <a href="#shop" data-filter-link="nu">Nữ</a>
+        <a href="#shop" data-filter-link="nam">Nam</a>
+        <a href="#shop" data-filter-link="phukien">Phụ kiện</a>
+        <a href="#shop" data-filter-link="giay">Giày</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#sale" class="nav__sale">Sale</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Tìm kiếm" data-open-search>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Yêu thích" data-open-wishlist>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.2 3.3 4.5 7 4.5c2.1 0 3.6 1.1 5 3 1.4-1.9 2.9-3 5-3 3.7 0 6 3.7 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+          <span class="badge" data-wish-count hidden>0</span>
+        </button>
+        <button class="icon-btn" aria-label="Giỏ hàng" data-open-cart>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="badge" data-cart-count hidden>0</span>
+        </button>
+      </div>
+    </div>
+    <div class="search" data-search hidden>
+      <div class="search__inner">
+        <input type="search" placeholder="Tìm áo khoác, đầm, túi xách…" aria-label="Tìm kiếm sản phẩm" data-search-input>
+        <button class="icon-btn" aria-label="Đóng tìm kiếm" data-close-search>✕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu di động -->
+  <div class="mobile-menu" data-menu aria-hidden="true">
+    <button class="icon-btn mobile-menu__close" aria-label="Đóng menu" data-close-menu>✕</button>
+    <a href="#shop" data-filter-link="nu">Nữ</a>
+    <a href="#shop" data-filter-link="nam">Nam</a>
+    <a href="#shop" data-filter-link="phukien">Phụ kiện</a>
+    <a href="#shop" data-filter-link="giay">Giày</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#sale" class="is-sale">Sale</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bgword" aria-hidden="true">RETRO</div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--light">Bộ sưu tập Thu — Đông 2026</p>
+          <h1 class="hero__title">
+            <span class="reveal">Sống</span>
+            <span class="reveal hero__title--yellow">Rực</span>
+            <span class="reveal">Rỡ<em>.</em></span>
+          </h1>
+          <p class="hero__lead">Những phom dáng táo bạo, gam màu nguyên bản và chất liệu được chọn lọc kỹ lưỡng. Thời trang cho người dám nổi bật — và không cần xin phép ai.</p>
+          <div class="hero__ctas">
+            <a href="#shop" class="btn btn--ink">Mua ngay <span aria-hidden="true">→</span></a>
+            <a href="#lookbook" class="btn btn--ghost-light">Xem Lookbook</a>
+          </div>
+          <dl class="hero__stats">
+            <div><dt>48</dt><dd>Thiết kế mới</dd></div>
+            <div><dt>100%</dt><dd>May tại Việt Nam</dd></div>
+            <div><dt>4.9★</dt><dd>12K đánh giá</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual">
+          <div class="frame frame--hero">
+            <img src="https://images.unsplash.com/photo-1632149877166-f75d49000351?auto=format&fit=crop&w=1100&q=80" alt="Người mẫu mặc blazer trắng ngà oversize" fetchpriority="high">
+          </div>
+          <div class="sticker" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+              <text><textPath href="#circ">MỚI VỀ ✦ NEW IN ✦ MỚI VỀ ✦ NEW IN ✦</textPath></text>
+            </svg>
+            <span>26</span>
+          </div>
+          <div class="hero__tag">
+            <span>Blazer Ngà Oversize</span>
+            <strong>2.290.000₫</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Táo bạo</span><i>✦</i><span>Nguyên bản</span><i>✦</i><span>Rực rỡ</span><i>✦</i><span>Bền vững</span><i>✦</i><span>Không khuôn mẫu</span><i>✦</i>
+        <span>Táo bạo</span><i>✦</i><span>Nguyên bản</span><i>✦</i><span>Rực rỡ</span><i>✦</i><span>Bền vững</span><i>✦</i><span>Không khuôn mẫu</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Danh mục -->
+    <section class="section categories">
+      <div class="section__head">
+        <h2 class="display">Chọn <span class="text-red">phong cách</span></h2>
+        <p class="section__note">Bốn thế giới. Một tinh thần.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="#shop" class="cat cat--red" data-filter-link="nu">
+          <img src="https://images.unsplash.com/photo-1583846783214-7229a91b20ed?auto=format&fit=crop&w=700&q=80" alt="Áo blouse trắng nữ" loading="lazy">
+          <span class="cat__label">Nữ</span><span class="cat__count">86 sản phẩm</span>
+        </a>
+        <a href="#shop" class="cat cat--blue" data-filter-link="nam">
+          <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=700&q=80" alt="Áo thun trắng nam" loading="lazy">
+          <span class="cat__label">Nam</span><span class="cat__count">54 sản phẩm</span>
+        </a>
+        <a href="#shop" class="cat cat--yellow" data-filter-link="phukien">
+          <img src="https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=700&q=80" alt="Túi xách bạc" loading="lazy">
+          <span class="cat__label">Phụ kiện</span><span class="cat__count">32 sản phẩm</span>
+        </a>
+        <a href="#shop" class="cat cat--ink" data-filter-link="giay">
+          <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=80" alt="Giày cao gót xanh navy" loading="lazy">
+          <span class="cat__label">Giày</span><span class="cat__count">21 sản phẩm</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Cửa hàng -->
+    <section class="section shop" id="shop">
+      <div class="section__head">
+        <h2 class="display">Mới <span class="text-blue">về</span> <em class="serif">tuần này</em></h2>
+        <div class="filters" role="tablist" aria-label="Lọc sản phẩm">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Tất cả</button>
+          <button class="chip" data-filter="nu" role="tab" aria-selected="false">Nữ</button>
+          <button class="chip" data-filter="nam" role="tab" aria-selected="false">Nam</button>
+          <button class="chip" data-filter="phukien" role="tab" aria-selected="false">Phụ kiện</button>
+          <button class="chip" data-filter="giay" role="tab" aria-selected="false">Giày</button>
+          <button class="chip chip--sale" data-filter="sale" role="tab" aria-selected="false">Sale</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <p data-result-count>12 sản phẩm</p>
+        <label class="sort">Sắp xếp
+          <select data-sort>
+            <option value="featured">Nổi bật</option>
+            <option value="new">Mới nhất</option>
+            <option value="price-asc">Giá thấp → cao</option>
+            <option value="price-desc">Giá cao → thấp</option>
+          </select>
+        </label>
+      </div>
+      <div class="product-grid" data-grid></div>
+      <p class="empty" data-empty hidden>Không tìm thấy sản phẩm phù hợp. Thử từ khóa khác nhé!</p>
+    </section>
+
+    <!-- Flash sale -->
+    <section class="sale" id="sale">
+      <div class="sale__inner">
+        <div class="sale__copy">
+          <p class="eyebrow">Flash sale cuối tuần</p>
+          <h2 class="sale__title">Giảm<br>đến <span>40%</span></h2>
+          <p>Áp dụng cho các thiết kế được đánh dấu <b>Sale</b>. Số lượng có hạn — hết là hết.</p>
+          <div class="countdown" data-countdown aria-live="polite">
+            <div><b data-cd="d">00</b><span>Ngày</span></div>
+            <div><b data-cd="h">00</b><span>Giờ</span></div>
+            <div><b data-cd="m">00</b><span>Phút</span></div>
+            <div><b data-cd="s">00</b><span>Giây</span></div>
+          </div>
+          <a href="#shop" class="btn btn--red" data-filter-link="sale">Săn deal ngay <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="sale__visual">
+          <div class="frame frame--sale">
+            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80" alt="Quần jogger màu hồng đất" loading="lazy">
+          </div>
+          <div class="sale__burst" aria-hidden="true">-40%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lookbook -->
+    <section class="lookbook" id="lookbook">
+      <div class="lookbook__inner">
+        <div class="lookbook__head">
+          <p class="eyebrow eyebrow--light">Lookbook — Chương 07</p>
+          <h2 class="lookbook__title">Phong cách là <em class="serif">ngôn ngữ</em> không cần lời.</h2>
+          <p class="lookbook__lead">Chụp tại Sài Gòn, Milan và những góc phố mà ánh nắng chiều đổ xuống đẹp nhất. Mỗi khung hình là một cách phối đồ bạn có thể mang về.</p>
+          <a href="#shop" class="btn btn--yellow">Mua theo set đồ <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="lookbook__grid">
+          <figure class="look look--1">
+            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=700&q=80" alt="Áo len cam" loading="lazy">
+            <figcaption>01 — Cam hoàng hôn</figcaption>
+          </figure>
+          <figure class="look look--2">
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=700&q=80" alt="Áo len đỏ" loading="lazy">
+            <figcaption>02 — Đỏ tuyệt đối</figcaption>
+          </figure>
+          <figure class="look look--3">
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80" alt="Sơ mi trắng và cà vạt" loading="lazy">
+            <figcaption>03 — Quý ông công sở</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cam kết -->
+    <section class="perks">
+      <div class="perk"><span class="perk__num">01</span><h3>Giao nhanh 2H</h3><p>Nội thành TP.HCM &amp; Hà Nội. Miễn phí đơn từ 999K.</p></div>
+      <div class="perk"><span class="perk__num">02</span><h3>Đổi trả 30 ngày</h3><p>Không vừa? Đổi size miễn phí, không cần lý do.</p></div>
+      <div class="perk"><span class="perk__num">03</span><h3>Thanh toán linh hoạt</h3><p>COD, thẻ, ví điện tử hoặc trả góp 0%.</p></div>
+      <div class="perk"><span class="perk__num">04</span><h3>May tại Việt Nam</h3><p>Xưởng may đạt chuẩn, chất liệu truy xuất nguồn gốc.</p></div>
+    </section>
+
+    <!-- Đánh giá -->
+    <section class="section reviews">
+      <div class="section__head">
+        <h2 class="display">Họ nói <span class="text-red">gì</span>?</h2>
+      </div>
+      <div class="review-grid">
+        <blockquote class="review review--yellow">
+          <p>“Chiếc blazer Ngà lên dáng cực đẹp, vải đứng form mà vẫn mát. Đi đâu cũng được hỏi mua ở đâu.”</p>
+          <footer><b>Minh Anh</b> — Hà Nội <span class="stars">★★★★★</span></footer>
+        </blockquote>
+        <blockquote class="review review--blue">
+          <p>“Giao hàng 2 tiếng thật. Đóng gói như quà tặng, mở hộp mà muốn chụp ảnh luôn.”</p>
+          <footer><b>Quốc Bảo</b> — TP.HCM <span class="stars">★★★★★</span></footer>
+        </blockquote>
+        <blockquote class="review review--red">
+          <p>“Size chuẩn, đổi trả dễ. Bomber Terracotta là món mình mặc nhiều nhất mùa này.”</p>
+          <footer><b>Thu Hà</b> — Đà Nẵng <span class="stars">★★★★★</span></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Bản tin -->
+    <section class="newsletter">
+      <div class="newsletter__inner">
+        <h2 class="newsletter__title">Giảm <span>10%</span> cho đơn đầu tiên</h2>
+        <p>Đăng ký để nhận tin bộ sưu tập mới, ưu đãi riêng và lời mời sự kiện trước tiên.</p>
+        <form class="newsletter__form" data-newsletter>
+          <input type="email" required placeholder="Email của bạn" aria-label="Email">
+          <button type="submit" class="btn btn--ink">Đăng ký</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__big" aria-hidden="true">SẮC.</div>
+    <div class="footer__cols">
+      <div>
+        <h4>Mua sắm</h4>
+        <a href="#shop">Hàng mới về</a><a href="#shop">Bán chạy</a><a href="#sale">Sale</a><a href="#lookbook">Lookbook</a>
+      </div>
+      <div>
+        <h4>Hỗ trợ</h4>
+        <a href="#top">Hướng dẫn chọn size</a><a href="#top">Chính sách đổi trả</a><a href="#top">Theo dõi đơn hàng</a><a href="#top">Câu hỏi thường gặp</a>
+      </div>
+      <div>
+        <h4>Cửa hàng</h4>
+        <p>12 Lê Thánh Tôn, Q.1, TP.HCM</p><p>45 Hàng Bài, Hoàn Kiếm, Hà Nội</p><p>Hotline: 1900 6868</p>
+      </div>
+      <div>
+        <h4>Theo dõi</h4>
+        <a href="#top">Instagram</a><a href="#top">TikTok</a><a href="#top">Facebook</a><a href="#top">Pinterest</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 SẮC Studio. Bảo lưu mọi quyền.</span>
+      <span>Ảnh minh họa: Unsplash</span>
+    </div>
+  </footer>
+
+  <!-- Giỏ hàng -->
+  <div class="overlay" data-overlay hidden></div>
+  <aside class="drawer" data-cart aria-label="Giỏ hàng" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Giỏ hàng <span data-cart-count-inline>(0)</span></h3>
+      <button class="icon-btn" aria-label="Đóng giỏ hàng" data-close-cart>✕</button>
+    </div>
+    <div class="ship-bar">
+      <p data-ship-msg>Mua thêm 999.000₫ để được miễn phí giao hàng</p>
+      <div class="ship-bar__track"><div class="ship-bar__fill" data-ship-fill></div></div>
+    </div>
+    <div class="drawer__body" data-cart-items></div>
+    <div class="drawer__foot">
+      <div class="drawer__row"><span>Tạm tính</span><b data-subtotal>0₫</b></div>
+      <div class="drawer__row drawer__row--muted"><span>Phí giao hàng</span><span data-shipping>—</span></div>
+      <div class="drawer__row drawer__row--total"><span>Tổng cộng</span><b data-total>0₫</b></div>
+      <button class="btn btn--red btn--block" data-checkout>Thanh toán <span aria-hidden="true">→</span></button>
+    </div>
+  </aside>
+
+  <!-- Xem nhanh -->
+  <div class="modal" data-modal role="dialog" aria-modal="true" aria-label="Chi tiết sản phẩm" hidden>
+    <div class="modal__box">
+      <button class="icon-btn modal__close" aria-label="Đóng" data-close-modal>✕</button>
+      <div class="modal__img"><img alt="" data-m-img></div>
+      <div class="modal__info">
+        <p class="eyebrow" data-m-cat></p>
+        <h3 class="modal__title" data-m-name></h3>
+        <p class="modal__price" data-m-price></p>
+        <p class="modal__desc" data-m-desc></p>
+        <div class="opt">
+          <span class="opt__label">Màu sắc: <b data-m-color-name></b></span>
+          <div class="swatches" data-m-colors></div>
+        </div>
+        <div class="opt">
+          <span class="opt__label">Kích cỡ</span>
+          <div class="sizes" data-m-sizes></div>
+        </div>
+        <div class="modal__actions">
+          <div class="qty">
+            <button aria-label="Giảm" data-qty="-1">−</button>
+            <span data-m-qty>1</span>
+            <button aria-label="Tăng" data-qty="1">+</button>
+          </div>
+          <button class="btn btn--ink btn--grow" data-m-add>Thêm vào giỏ</button>
+        </div>
+        <ul class="modal__meta">
+          <li>✓ Còn hàng — giao trong 2H nội thành</li>
+          <li>✓ Đổi size miễn phí trong 30 ngày</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
